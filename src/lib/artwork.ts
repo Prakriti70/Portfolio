@@ -1,5 +1,14 @@
 import type { Artwork, ArtworkCategory } from "@/types/artwork";
 
+/** Split plain-text descriptions into paragraphs while preserving line breaks within each paragraph. */
+export function splitDescriptionIntoParagraphs(description: string): string[] {
+  return description
+    .trim()
+    .split(/\r?\n[ \t]*\r?\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+}
+
 /** Filter by category. "All" returns everything. */
 export function filterArtwork(items: Artwork[], category: ArtworkCategory | "All"): Artwork[] {
   return category === "All" ? items : items.filter((a) => a.category === category);

@@ -47,7 +47,7 @@ export function ArtworkCard({ artwork, onOpen }: Props) {
       <div className="p-4">
         <h3 className="text-xl">{artwork.title}</h3>
         {meta && <p className="text-sm text-forest/80">{meta}</p>}
-        {artwork.description && <p className="mt-1 line-clamp-2 text-sm">{artwork.description}</p>}
+        {artwork.description && <p className="mt-1 line-clamp-2 whitespace-pre-line text-sm">{artwork.description}</p>}
         {artwork.isSample && <p className="mt-2 text-xs italic text-rose">Sample content, not my work</p>}
       </div>
     </button>

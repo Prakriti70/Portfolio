@@ -1,13 +1,8 @@
 "use client";
-import { useMemo, useState } from "react";
-import { ARTWORK_CATEGORIES, type Artwork, type ArtworkCategory } from "@/types/artwork";
-import { filterArtwork } from "@/lib/artwork";
-import { FilterChips } from "@/components/ui/FilterChips";
+import { useState } from "react";
+import type { Artwork } from "@/types/artwork";
 import { ArtworkCard } from "./ArtworkCard";
 import { ArtworkLightbox } from "./ArtworkLightbox";
-
-type Filter = "All" | ArtworkCategory;
-const filters: readonly Filter[] = ["All", ...ARTWORK_CATEGORIES];
 
 interface Props {
   items: Artwork[];
@@ -15,30 +10,25 @@ interface Props {
   loadError?: string;
 }
 
-/** Masonry gallery with category filters and a detail lightbox. It only receives data; it never fetches. */
+/** Paintings gallery with a detail lightbox. It only receives data; it never fetches. */
 export function ArtGallery({ items, loadError }: Props) {
-  const [filter, setFilter] = useState<Filter>("All");
   const [openId, setOpenId] = useState<string | null>(null);
 
-  const visible = useMemo(() => filterArtwork(items, filter), [items, filter]);
+  const visible = items.filter((artwork) => artwork.category === "Paintings");
   const openIndex = visible.findIndex((a) => a.id === openId);
   const current = openIndex >= 0 ? visible[openIndex] : null;
 
   return (
     <div>
-      <div className="mb-8">
-        <FilterChips label="Filter art by category" options={filters} value={filter} onChange={setFilter} />
-      </div>
-
       {loadError && (
         <p role="alert" className="mb-6 rounded-md border-2 border-rose bg-cream p-4">
-          The gallery couldn&apos;t load right now. Try refreshing in a moment.
+          Some online artwork couldn&apos;t load. The paintings included with the site are still available.
         </p>
       )}
 
       {visible.length === 0 ? (
         <p className="rounded-lg border-2 border-dashed border-moss p-10 text-center font-serif text-lg italic text-forest">
-          {filter === "All" ? "The sketchbook is empty for now." : `Nothing in ${filter} yet. Check back soon, or try another page of the sketchbook.`}
+          The painting gallery is empty for now.
         </p>
       ) : (
         <div className="columns-2 gap-4 lg:columns-3 xl:columns-4">

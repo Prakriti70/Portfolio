@@ -4,7 +4,7 @@
 
 A single-page portfolio built with **Next.js 16 · TypeScript · Tailwind CSS 4 · Supabase**. The hero brings together two sides: graph paper representing engineering and watercolour representing art. Both themes carry equal weight throughout the rest of the site.
 
-The project runs with clearly labelled sample content even without external configuration.
+The project runs without external configuration and includes local artwork in the Art Journal.
 
 ## Quick Start
 
@@ -54,7 +54,8 @@ src/
 ├── data/
 │   ├── projects.ts        Project data
 │   ├── curiosity.ts       Currently curious about
-│   └── sampleArtwork.ts   Placeholder artwork
+│   ├── localArtwork.ts    Paintings included with the site
+│   └── sampleArtwork.ts   Artwork fixtures for tests
 ├── lib/                   Supabase, validation, image processing,
 │                          artwork utilities
 ├── hooks/                 useActiveSection, useReducedMotion
@@ -127,7 +128,7 @@ The site's colour palette is defined in `src/app/globals.css` under `@theme`.
 
 ## Art Journal
 
-The Art Journal provides an admin interface for managing paintings, illustrations, and written work.
+The Art Journal displays paintings in a public gallery and provides an admin interface for managing artwork.
 
 It is accessible at `/admin` and requires an authorised account.
 
@@ -143,7 +144,7 @@ It is accessible at `/admin` and requires an authorised account.
 
 Existing entries can be reordered, edited, or deleted from the admin dashboard. New uploads appear at the top of the gallery.
 
-The gallery displays labelled sample images until actual artwork is uploaded.
+Paintings listed in `src/data/localArtwork.ts` are displayed directly from `public/images/artwork/`, even without Supabase configuration. When Supabase is configured, online uploads appear alongside these local paintings.
 
 ## Supabase Setup
 

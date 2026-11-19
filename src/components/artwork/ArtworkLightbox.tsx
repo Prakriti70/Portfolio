@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import type { Artwork } from "@/types/artwork";
 import { formatMonthYear } from "@/lib/utils";
+import { splitDescriptionIntoParagraphs } from "@/lib/artwork";
 
 interface Props {
   artwork: Artwork | null;
@@ -73,7 +74,11 @@ export function ArtworkLightbox({ artwork, hasPrev, hasNext, onPrev, onNext, onC
           <div className="flex flex-col gap-4 p-6 md:p-8">
             <h2 id="lightbox-title" className="pr-12 text-3xl">{artwork.title}</h2>
             {meta && <p className="text-sm text-forest/80">{meta}</p>}
-            {artwork.description && <p className="text-base">{artwork.description}</p>}
+            {splitDescriptionIntoParagraphs(artwork.description).map((paragraph, index) => (
+              <p key={index} className="whitespace-pre-line text-base leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
             {artwork.imageUrl && artwork.body && (
               <p className="whitespace-pre-line font-serif italic text-forest">{artwork.body}</p>
             )}

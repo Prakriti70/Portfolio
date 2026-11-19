@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { filterArtwork, moveItem, usedCategories } from "@/lib/artwork";
+import { filterArtwork, moveItem, splitDescriptionIntoParagraphs, usedCategories } from "@/lib/artwork";
 import { sampleArtwork } from "@/data/sampleArtwork";
 
 describe("filterArtwork", () => {
@@ -20,6 +20,18 @@ describe("moveItem", () => {
     const list = ["a", "b", "c"];
     expect(moveItem(list, 0, 1)).toEqual(["b", "a", "c"]);
     expect(list).toEqual(["a", "b", "c"]);
+  });
+
+  describe("splitDescriptionIntoParagraphs", () => {
+    it("preserves line breaks within paragraphs and separates blank-line paragraphs", () => {
+      expect(splitDescriptionIntoParagraphs("\n  First line\n  Second line\n\n  Final paragraph.  ")).toEqual([
+        "First line\n  Second line",
+        "Final paragraph.",
+      ]);
+    });
+    it("returns no paragraphs for an empty description", () => {
+      expect(splitDescriptionIntoParagraphs("  \n  ")).toEqual([]);
+    });
   });
   it("ignores out-of-range moves", () => {
     expect(moveItem(["a", "b"], 0, -1)).toEqual(["a", "b"]);
