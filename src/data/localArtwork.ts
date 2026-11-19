@@ -90,7 +90,14 @@ Prathama— meaning “first” or “the beginning” `,
     id: "local-rangasarasi",
     title: "Rangasarasi",
     category: "Paintings",
-    description: "",
+    description: `Medium: Acrylic on stretched canvas  
+Dimensions: 8 × 10 inches
+
+Inspiration
+
+I mostly wanted to paint this one without overthinking it — just pick colours I liked and see where they took me. I came across the picture on Pinterest and immediately liked the dreamy little scene, especially the swan. I've always had a soft spot for swans, so I knew I had to paint one. The hanging vines, the water, and all the colours were just an excuse to have fun with the painting.
+
+Rangarasi — meaning “one who delights in colours” `,
     imageUrl: "/images/artwork/Rangasarasi.jpeg",
     thumbUrl: "/images/artwork/Rangasarasi.jpeg",
     width: 1206,
@@ -101,7 +108,14 @@ Prathama— meaning “first” or “the beginning” `,
     id: "local-ricordo",
     title: "Ricordo",
     category: "Paintings",
-    description: "",
+    description: `Medium: Watercolor on 300 GSM paper  
+Dimensions: To be added
+
+Inspiration
+
+I've been watching quite a lot of videos about Greece and Italy lately, and I think I've started carrying little imagined corners of those places in my head. When I came across this picture, it felt like one of them — a quiet little street, warm and familiar, the kind of place I'd want to wander around without anywhere to be.
+
+Ricordo — meaning “memory” in Italian`,
     imageUrl: "/images/artwork/Ricordo.jpeg",
     thumbUrl: "/images/artwork/Ricordo.jpeg",
     width: 900,
@@ -112,7 +126,14 @@ Prathama— meaning “first” or “the beginning” `,
     id: "local-shailasha",
     title: "Shailasha",
     category: "Paintings",
-    description: "",
+    description: `Medium: Acrylic on paper  
+Dimensions:
+
+Inspiration
+
+This one is probably the least planned painting in this collection. I wasn't trying to recreate a particular picture or get everything just right.It was one of my first paintings after picking up the hobby again, years after leaving it behind in primary school, so it feels like the beginning of finding my way back to painting.
+
+Shailasha— inspired by the Sanskrit words for “mountain”`,
     imageUrl: "/images/artwork/Shailasha.jpeg",
     thumbUrl: "/images/artwork/Shailasha.jpeg",
     width: 1600,
@@ -123,7 +144,14 @@ Prathama— meaning “first” or “the beginning” `,
     id: "local-quiet-cosmos",
     title: "The Quiet of the Cosmos",
     category: "Paintings",
-    description: "",
+    description: `Medium:Acrylic on round canvas  
+Dimensions:
+
+Inspiration
+
+After watching countless videos about the Artemis II mission and seeing its mesmerizing images of the Moon, I found myself wanting to paint it. There's something fascinating about looking up at something so familiar yet so far beyond our reach.
+
+The Quiet of the Cosmos — a nod to the stillness and vastness of space, and the little wonders that make us look up.`,
     imageUrl: "/images/artwork/The quiet of the cosmos.jpeg",
     thumbUrl: "/images/artwork/The quiet of the cosmos.jpeg",
     width: 900,
