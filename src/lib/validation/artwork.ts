@@ -7,7 +7,6 @@ export const MAX_SOURCE_BYTES = 20 * 1024 * 1024;
 /** Matches the bucket's server-side limit (5 MB) for the processed file. */
 export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024;
 
-/** Returns an error message, or null when the file is fine. */
 export function validateImageFile(file: { type: string; size: number; name: string }): string | null {
   if (!ACCEPTED_IMAGE_TYPES.includes(file.type)) {
     return `"${file.name}" isn't a JPG, PNG or WebP image.`;

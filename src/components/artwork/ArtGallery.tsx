@@ -6,7 +6,6 @@ import { ArtworkLightbox } from "./ArtworkLightbox";
 
 interface Props {
   items: Artwork[];
-  /** A friendly message when the database could not be reached. */
   loadError?: string;
 }
 

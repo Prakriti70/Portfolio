@@ -35,7 +35,6 @@ interface Props {
   onChange: (field: keyof FormValues, value: string) => void;
 }
 
-/** Shared by the "add new" form and the per-entry editor, so the fields are defined once. */
 export function ArtworkFields({ idPrefix, values, errors, onChange }: Props) {
   const field = (name: keyof FormValues, label: string, el: React.ReactNode) => (
     <div>

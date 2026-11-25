@@ -30,7 +30,6 @@ export function ArtworkLightbox({ artwork, hasPrev, hasNext, onPrev, onNext, onC
     if (!open && dialog.open) dialog.close();
   }, [open]);
 
-  // Lock page scroll while open
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };

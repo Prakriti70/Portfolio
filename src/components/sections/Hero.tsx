@@ -31,7 +31,6 @@ export function Hero() {
             {siteConfig.tagline}
           </p>
 
-          {/* Two paths, same size and weight */}
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <LinkButton href="#work" variant="forest">Explore my projects</LinkButton>
             <LinkButton href="#art" variant="sage">Wander through my art</LinkButton>

@@ -13,7 +13,6 @@ interface Props {
   onCreated: (row: ArtworkRow) => void;
 }
 
-/** Adds one new entry: validates, resizes the image in the browser, uploads it, then saves the details. */
 export function UploadForm({ client, onCreated }: Props) {
   const fileRef = useRef<HTMLInputElement>(null);
   const [values, setValues] = useState<FormValues>(emptyValues);

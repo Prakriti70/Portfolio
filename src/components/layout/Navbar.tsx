@@ -33,7 +33,6 @@ export function Navbar() {
         ? pathname === item.href
         : pathname === "/" && currentItemId === item.id;
 
-  // Escape closes the mobile menu
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
@@ -51,7 +50,6 @@ export function Navbar() {
           {siteConfig.name}
         </Link>
 
-        {/* Desktop links */}
         <ul className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => (
             <li key={item.id}>
@@ -61,7 +59,6 @@ export function Navbar() {
                 className="relative block px-3 py-2 text-sm font-medium text-forest"
               >
                 {item.label}
-                {/* The active section gets a little hand-drawn squiggle */}
                 <svg
                   aria-hidden="true"
                   viewBox="0 0 40 6"
@@ -78,7 +75,6 @@ export function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile toggle */}
         <button
           type="button"
           className="grid size-11 place-items-center rounded-md text-forest md:hidden"

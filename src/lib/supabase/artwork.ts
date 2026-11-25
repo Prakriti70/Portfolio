@@ -4,7 +4,6 @@ import { supabaseUrl } from "./client";
 
 export const ARTWORK_BUCKET = "artwork";
 
-/** Public URL of a file in the artwork bucket. */
 export function storageUrl(path: string | null): string | undefined {
   return path ? `${supabaseUrl}/storage/v1/object/public/${ARTWORK_BUCKET}/${path}` : undefined;
 }
@@ -34,7 +33,6 @@ export interface ArtworkResult {
   error?: string;
 }
 
-/** Fetch every artwork entry, in the order the owner chose. */
 export async function fetchArtwork(client: SupabaseClient): Promise<ArtworkResult> {
   const { data, error } = await client
     .from("artworks")

@@ -1,4 +1,3 @@
-/** A single five-pointed star. Colour comes from `currentColor`. */
 export function Star({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 64 64" aria-hidden="true" className={className} fill="currentColor">

@@ -77,7 +77,6 @@ export function ProjectCard({ project }: { project: Project }) {
         </ul>
         <p className="text-sm text-ink/80"><span className="font-medium text-forest">My part:</span> {project.role}</p>
 
-        {/* Links only appear when they are real */}
         <div className="mt-auto flex flex-wrap gap-x-5 gap-y-1 pt-1">
           {project.repoUrl && (
             <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-1 font-medium text-forest underline underline-offset-4 transition-all hover:gap-2">

@@ -7,7 +7,6 @@ interface Props<T extends string> {
   onChange: (value: T) => void;
 }
 
-/** A row of toggle buttons used to filter projects and artwork. */
 export function FilterChips<T extends string>({ label, options, value, onChange }: Props<T>) {
   return (
     <div role="group" aria-label={label} className="flex flex-wrap gap-2">

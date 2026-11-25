@@ -9,12 +9,10 @@ export function splitDescriptionIntoParagraphs(description: string): string[] {
     .filter(Boolean);
 }
 
-/** Filter by category. "All" returns everything. */
 export function filterArtwork(items: Artwork[], category: ArtworkCategory | "All"): Artwork[] {
   return category === "All" ? items : items.filter((a) => a.category === category);
 }
 
-/** Categories that actually have work in them, so filter chips are never dead ends. */
 export function usedCategories(items: Artwork[]): ArtworkCategory[] {
   const seen = new Set(items.map((a) => a.category));
   return [...seen];

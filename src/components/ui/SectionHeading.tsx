@@ -1,11 +1,9 @@
 interface Props {
   id: string;
   title: string;
-  /** A handwritten-style aside under the title. */
   aside?: string;
 }
 
-/** Shared heading for every section, so spacing and style stay consistent. */
 export function SectionHeading({ id, title, aside }: Props) {
   return (
     <div className="mb-10 max-w-2xl">

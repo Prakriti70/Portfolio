@@ -33,7 +33,6 @@ export function AdminDashboard() {
     else setRows(result.rows);
   }, [client]);
 
-  // Follow the login session. All state changes happen inside async callbacks.
   useEffect(() => {
     if (!client) return;
     async function sync(signedIn: boolean) {

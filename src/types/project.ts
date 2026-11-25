@@ -8,7 +8,6 @@ export interface Project {
   /** Path under /public, e.g. "/images/projects/my-project.png" */
   thumbnail: string;
   thumbnailAlt: string;
-  /** Gives cards slightly different proportions without chaos. */
   aspect: "wide" | "square" | "tall";
   description: string;
   /** WHY you made it: the question or curiosity behind the project. */

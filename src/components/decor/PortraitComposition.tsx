@@ -52,7 +52,6 @@ export function PortraitComposition() {
       className="relative mx-auto w-full max-w-sm px-4 pb-10 pt-4 sm:max-w-md"
       style={{ "--px": 0, "--py": 0 } as React.CSSProperties}
     >
-      {/* Cutout outline, slightly off-register like a hand-cut sticker */}
       <div aria-hidden="true" className="absolute inset-x-1 bottom-10 top-6 rotate-2 rounded-t-[50%] rounded-b-xl bg-moss" />
       <div
         aria-hidden="true"
@@ -70,7 +69,6 @@ export function PortraitComposition() {
         />
       </div>
 
-      {/* Stars: tap or click one to spin it */}
       <div className="absolute inset-0">
         {stars.map((s, i) => (
           <button
@@ -93,7 +91,6 @@ export function PortraitComposition() {
         ))}
       </div>
 
-      {/* Handwritten note: click for the next one */}
       <div className="absolute -left-1 bottom-0 z-10 w-[62%] -rotate-3 sm:-left-6">
         <span aria-hidden="true" className="tape absolute -top-3 left-1/2 block h-5 w-16 -translate-x-1/2 rotate-2" />
         <button
@@ -107,7 +104,6 @@ export function PortraitComposition() {
         </button>
       </div>
 
-      {/* Easter egg: the little moon */}
       <div className="absolute right-0 top-0 z-10">
         <button
           type="button"

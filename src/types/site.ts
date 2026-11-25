@@ -1,4 +1,3 @@
-/** Shape of everything personal that lives in src/config/site.ts */
 export interface SocialLink {
   label: string;
   /** Full URL. Leave empty to hide the link. */
@@ -13,9 +12,7 @@ export interface SiteConfig {
   description: string;
   tagline: string;
   intro: string;
-  /** Phrases that rotate slowly in the hero. */
   rotatingPhrases: string[];
-  /** Playful "Currently exploring…" indicator. */
   currentlyExploring: string;
   portrait: { src: string; alt: string };
   about: {

@@ -21,7 +21,6 @@ const toValues = (r: ArtworkRow): FormValues => ({
 
 const iconBtn = "grid size-11 place-items-center rounded-full border-2 border-moss/60 text-forest hover:border-forest disabled:opacity-40";
 
-/** One row in the admin list: reorder, edit details, or delete. */
 export function ArtworkEditor({ row, index, count, onMove, onSave, onDelete }: Props) {
   const [editing, setEditing] = useState(false);
   const [values, setValues] = useState<FormValues>(() => toValues(row));
