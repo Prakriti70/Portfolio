@@ -23,17 +23,17 @@ export const siteConfig: SiteConfig = {
   ],
 
   
-  currentlyExploring: "Exploring research at the intersection of people and technology.",
+  currentlyExploring: "Research at the intersection of people and technology.",
 
      portrait: {
-     src: "/images/artwork/me.png",
+     src: "/images/profile.png",
      alt: "Photo of Prakriti",   
    },
 
   about: {
     heading: "About me!",
     paragraphs: [
-      "Hi! I'm in my second year of Computer Engineering, and I'm still at the stage where every new concept feels like a door I get to open. I like building small things to understand big ones.",
+      "Hi! I have completed my second year of Computer Engineering, and I'm at the stage where every new concept feels like a door I get to open. I like building small things to understand big ones.",
       "Away from the screen I paint, scribble poems and make things from whatever is lying around. Oddly, the two sides keep borrowing from each other: debugging feels like composition, and painting feels like problem-solving. All in all , I like seeing things transform from one state to another, be it a a line of code turning into something beautiful or a blank canvas turning into a painting.",
     ],
     
@@ -47,17 +47,24 @@ export const siteConfig: SiteConfig = {
 
   
   curiosityNotes: [
+    "me and arrays are about to become very close.",
     "I saw pixels in my canvas.",
-    "I trust a sketch more than a spec. Draw it first.",
-    "I smile randomly thinking about how sunflower seeds have their own algorithm.",
+    "i handsewed a pouch. naturally, a dress is next.",
+    "fixed a bug. introduced three new ones. balance.",
+    "made one bracelet and briefly considered opening a jewellery store.",
+   
     
   ],
-
-  easterEgg: {
-    title: "You found the moon.",
-    lines: ["if (curious) {", "  keep_looking();", "} else {", "  paint_something();", "}"],
-  },
-
+easterEgg: {
+  title: "You found the moon.",
+  lines: [
+    "while (learning) {",
+    "  make_something();",
+    "  break_things();",
+    "  learn_again();",
+    "}"
+  ],
+},
   email: "prakritip900@gmail.com",
 
  

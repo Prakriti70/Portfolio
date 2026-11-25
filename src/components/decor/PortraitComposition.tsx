@@ -64,6 +64,7 @@ export function PortraitComposition() {
           alt={portrait.alt}
           fill
           priority
+          unoptimized
           sizes="(min-width: 640px) 28rem, 90vw"
           className="-translate-x-1 object-cover"
         />
