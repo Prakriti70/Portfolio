@@ -33,7 +33,7 @@ export const siteConfig: SiteConfig = {
   about: {
     heading: "About me!",
     paragraphs: [
-      "Hi! I have completed my third year of Computer Engineering, and I'm at the stage where every new concept feels like a door I get to open. I like building small things to understand big ones.",
+      "Hi! I have completed my second year of Computer Engineering, and I'm at the stage where every new concept feels like a door I get to open. I like building small things to understand big ones.",
       "Away from the screen I paint, scribble poems and make things from whatever is lying around. Oddly, the two sides keep borrowing from each other: debugging feels like composition, and painting feels like problem-solving. All in all , I like seeing things transform from one state to another, be it a a line of code turning into something beautiful or a blank canvas turning into a painting.",
     ],
     
