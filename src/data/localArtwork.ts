@@ -127,7 +127,7 @@ Ricordo — meaning “memory” in Italian`,
     title: "Shailasha",
     category: "Paintings",
     description: `Medium: Acrylic on paper  
-Dimensions:
+Dimensions: A4 size
 
 Inspiration
 
