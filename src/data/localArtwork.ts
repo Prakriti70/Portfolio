@@ -8,7 +8,7 @@ export const localArtwork: Artwork[] = [
     description: `
 
        Medium: Acrylic on stretched canvas 
-       Dimensions: 8 × 10 inches 
+       Dimensions: 8 * 10 inches 
 
        Inspiration
 
@@ -31,7 +31,7 @@ export const localArtwork: Artwork[] = [
     description: `
 
 Medium: Acrylic on streched canvas  
-Dimensions: 8*10 inches
+Dimensions: 8 * 10 inches
 
 Inspiration
 
@@ -53,7 +53,7 @@ Anant Neer — endless waters.`,
     description: `
 
 Medium: Acrylic on streched canvas 
-Dimensions: 8*10 inches
+Dimensions: 8 * 10 inches
 
 Inspiration
 
@@ -73,7 +73,7 @@ Divyonnati-Divine elevation`,
     category: "Paintings",
     description: `
     Medium: Acrylic on stretched canvas  
-Dimensions: 8 × 10 inches
+Dimensions: 8 * 10 inches
 
 Inspiration
 
@@ -91,7 +91,7 @@ Prathama— meaning “first” or “the beginning” `,
     title: "Rangasarasi",
     category: "Paintings",
     description: `Medium: Acrylic on stretched canvas  
-Dimensions: 8 × 10 inches
+Dimensions: 8 * 10 inches
 
 Inspiration
 
@@ -109,7 +109,7 @@ Rangarasi — meaning “one who delights in colours” `,
     title: "Ricordo",
     category: "Paintings",
     description: `Medium: Watercolor on 300 GSM paper  
-Dimensions: To be added
+Dimensions: A4 size
 
 Inspiration
 
@@ -145,7 +145,7 @@ Shailasha— inspired by the Sanskrit words for “mountain”`,
     title: "The Quiet of the Cosmos",
     category: "Paintings",
     description: `Medium:Acrylic on round canvas  
-Dimensions:
+Dimensions: 6 inches in diameter
 
 Inspiration
 
