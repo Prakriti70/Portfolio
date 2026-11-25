@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
 
   tagline: "A little bit of logic, a little bit of art, and a lot of curiosity.",
   intro:
-    "I'm a second-year Computer Engineering student. I like figuring out how things work, and then making something of my own: sometimes in code, sometimes in paint.",
+    "I'm a third-year Computer Engineering student. I like figuring out how things work, and then making something of my own: sometimes in code, sometimes in paint.",
 
   rotatingPhrases: [
     "debugging things",
@@ -33,12 +33,12 @@ export const siteConfig: SiteConfig = {
   about: {
     heading: "About me!",
     paragraphs: [
-      "Hi! I have completed my second year of Computer Engineering, and I'm at the stage where every new concept feels like a door I get to open. I like building small things to understand big ones.",
+      "Hi! I have completed my third year of Computer Engineering, and I'm at the stage where every new concept feels like a door I get to open. I like building small things to understand big ones.",
       "Away from the screen I paint, scribble poems and make things from whatever is lying around. Oddly, the two sides keep borrowing from each other: debugging feels like composition, and painting feels like problem-solving. All in all , I like seeing things transform from one state to another, be it a a line of code turning into something beautiful or a blank canvas turning into a painting.",
     ],
     
     facts: [
-      { label: "Studying", value: "Computer Engineering (year 2)" },
+      { label: "Studying", value: "Computer Engineering (year 3)" },
       { label: "Making", value: "Mostly Programs, watercolours, short poems" },
       { label: "Learning", value: "AI, machine learning, computer graphics and the possibilities they bring" },
       { label: "Away from screens", value: "Exploring different interests beyond tech. A little bit of  gardening, cooking, painting, and crafting" },
